@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">seminar3_1099</string>
+    <string name="name">Nume: </string>
+    <string name="grp">Grupa: </string>
+    <string name="fac">Facultate: </string>
+    <string name="integr">Integralist?: </string>
+</resources>
