@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Seminar4_1099</string>
+<string-array name="zile">
+    <item>Bichon</item>
+    <item>Rotweiller</item>
+    <item>Golden retriever</item>
+    <item>maidanez</item>
+</string-array>
+</resources>
