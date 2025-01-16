@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Seminar9"
         tools:targetApi="31">
         <activity
+            android:name=".adaugare"
+            android:exported="false" />
+        <activity
             android:name=".JSONact"
             android:exported="false" />
         <activity

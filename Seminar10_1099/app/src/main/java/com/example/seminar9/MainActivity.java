@@ -11,6 +11,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,15 +26,25 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("message");
 
+        myRef.setValue("Hello, World3!");
         Button btnJs = findViewById(R.id.button);
-
-        btnJs.setOnClickListener(new View.OnClickListener() {
+        Button btn=findViewById(R.id.button);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it=new Intent(getApplicationContext(), JSONact.class);
-                startActivity(it);
+                Intent it=new Intent(getApplicationContext(), adaugare.class);
+                startActivityForResult(it,201);
             }
         });
+//        btnJs.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent it=new Intent(getApplicationContext(), JSONact.class);
+//                startActivity(it);
+//            }
+//        });
     }
 }
