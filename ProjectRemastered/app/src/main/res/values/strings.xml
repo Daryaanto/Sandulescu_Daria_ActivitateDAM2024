@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="rase">
+        <item>Bichon</item>
+        <item>Rotweiller</item>
+        <item>Golden retriever</item>
+        <item>maidanez</item>
+    </string-array>
+</resources>
